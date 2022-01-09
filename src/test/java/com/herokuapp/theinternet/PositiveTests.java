@@ -29,14 +29,14 @@ public class PositiveTests {
 
         //enter username
         WebElement username = driver.findElement(By.id("username"));
+        username.sendKeys("tomsmith");
 
         //enter password
         WebElement password = driver.findElement(By.name("password"));
+        password.sendKeys("SuperSecretPassword!");
 
         //click login button
         WebElement loginButton = driver.findElement(By.xpath("//form[@id='login']//i[@class='fa fa-2x fa-sign-in']"));
-        username.sendKeys("tomsmith");
-        password.sendKeys("SuperSecretPassword!");
         loginButton.click();
 
         //verifications:
