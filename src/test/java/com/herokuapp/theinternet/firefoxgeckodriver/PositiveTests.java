@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class PositiveTests {
 
-    @Test
+    @Test(priority=2, enabled=false)
     public void loginTest (){
         //Create driver
         System.out.println("Starting login test");

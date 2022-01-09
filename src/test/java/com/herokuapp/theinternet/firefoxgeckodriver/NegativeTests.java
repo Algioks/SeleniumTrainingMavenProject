@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class NegativeTests {
 
-    @Test
+    @Test(priority=2, enabled=false)
     public void incorrectUsernameLoginTest (){
 
         //Create driver
@@ -56,7 +56,7 @@ public class NegativeTests {
         driver.quit();
     }
 
-    @Test
+    @Test(priority=2, enabled=false)
     public void incorrectPasswordLoginTest (){
 
         //Create driver
