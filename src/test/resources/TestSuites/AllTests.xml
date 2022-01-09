@@ -4,13 +4,25 @@
 
     <test name="PostiveTests" >
         <classes>
-            <class name="com.herokuapp.theinternet.PositiveTests" />
+            <class name="com.herokuapp.theinternet.chromewebdriver.PositiveTests" />
+        </classes>
+    </test>
+
+    <test name="PostiveTests" >
+        <classes>
+            <class name="com.herokuapp.theinternet.firefoxgeckodriver.PositiveTests" />
         </classes>
     </test>
 
     <test name="NegativeTests">
         <classes>
-            <class name="com.herokuapp.theinternet.NegativeTests"/>
+            <class name="com.herokuapp.theinternet.chromewebdriver.NegativeTests"/>
+        </classes>
+    </test>
+
+    <test name="NegativeTests">
+        <classes>
+            <class name="com.herokuapp.theinternet.firefoxgeckodriver.NegativeTests"/>
         </classes>
     </test>
 

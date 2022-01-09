@@ -1,9 +1,10 @@
-package com.herokuapp.theinternet;
+package com.herokuapp.theinternet.firefoxgeckodriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,8 +15,8 @@ public class NegativeTests {
 
         //Create driver
         System.out.println("Starting login test");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\PC\\Desktop\\projects\\SeleniumTrainingMavenProject\\src\\main\\resources\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\PC\\Desktop\\projects\\SeleniumTrainingMavenProject\\src\\main\\resources\\geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
 
         // open test page
         String url = "http://the-internet.herokuapp.com/login";
@@ -60,8 +61,8 @@ public class NegativeTests {
 
         //Create driver
         System.out.println("Starting login test");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\PC\\Desktop\\projects\\SeleniumTrainingMavenProject\\src\\main\\resources\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\PC\\Desktop\\projects\\SeleniumTrainingMavenProject\\src\\main\\resources\\geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
 
         // open test page
         String url = "http://the-internet.herokuapp.com/login";
