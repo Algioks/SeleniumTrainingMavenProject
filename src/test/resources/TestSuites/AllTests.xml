@@ -2,28 +2,18 @@
 
 <suite name="AllTests" verbose="1" >
 
-    <test name="PostiveTests1" >
+    <test name="PostiveTests" >
         <classes>
-            <class name="com.herokuapp.theinternet.chromewebdriver.PositiveTests" />
+            <class name="com.herokuapp.theinternet.chromewebdriver.LoginTests" />
         </classes>
     </test>
 
-    <test name="PostiveTests2" >
+
+    <test name="NegativeTests">
         <classes>
-            <class name="com.herokuapp.theinternet.firefoxgeckodriver.PositiveTests" />
+            <class name="com.herokuapp.theinternet.chromewebdriver.LoginTests"/>
         </classes>
     </test>
 
-    <test name="NegativeTests3">
-        <classes>
-            <class name="com.herokuapp.theinternet.chromewebdriver.NegativeTests"/>
-        </classes>
-    </test>
-
-    <test name="NegativeTests4">
-        <classes>
-            <class name="com.herokuapp.theinternet.firefoxgeckodriver.NegativeTests"/>
-        </classes>
-    </test>
 
 </suite>
